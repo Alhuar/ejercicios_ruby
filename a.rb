@@ -1,3 +1,4 @@
+result == ""
 for num in 15..30 
 	num_st = num.to_s
 	if num % 3 == 0
