@@ -1,6 +1,7 @@
 puts "Write a sentence:"
 str = gets.chomp
-alt_str = str.gsub(/[[:punct:]]/, "").split(" ").sort
+alt_str = str.gsub(/[[:punct:]]/, "").split(" ").sort 
+#en lugar de /[[:punct:]]/ también podría utilizarse /[^a-zA-Z0-9\s]/
 
 def sp_sort(arr)
 	arr.sort { |a, b| a.downcase <=> b.downcase }
