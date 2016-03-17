@@ -61,11 +61,11 @@ class Shopcart
 	end
 
 	def final_price
-		total = 0
+		
 		@order.each do |milkshake|
-			total += milkshake.price_of_milkshake
+			@price += milkshake.price_of_milkshake
 		end
-		puts "The total is #{total}€"
+		puts "The total is #{@price}€"
 	end
 
 
