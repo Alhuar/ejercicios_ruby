@@ -43,5 +43,39 @@ arr_frase = frase.split("")
 end
 
   cypher("p| uhdo qdph lv grqdog gxfn", -3)
+  
+  
+  # Tercera iteración
+  
+  def solve_cipher(input)
+	 arr_input = input.split("")
+	 arr_input.each do |letter|
+	  letraordenada = letter.ord
+	  if letraordenada == 32
+	  	print " "
+	  end
+	  if letraordenada == 98
+	  	letraordenada = 121
+	  	print letraordenada.ord
+	  elsif letraordenada == 99
+	  	letraordenada = 122
+	  	print letraordenada.ord
+
+	  elsif letraordenada == 97
+	  	letraordenada = 120
+	  	print letraordenada.chr
+	  else 
+	  print (letter.ord-3).chr
+	  end
+	 
+	end
+
+
+
+end
+
+
+solve_cipher("p| uhdo qdph lv grqdog gxfn")
+
 
 
