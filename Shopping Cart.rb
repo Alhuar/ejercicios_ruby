@@ -129,68 +129,7 @@ alfon.checkout
 
 
 
-=begin
-class Person
-	attr_reader :name, :age
-	
-	def initialize(name, age)
-		@name = name
-		@age = age
-	end
 
-	def presentation
-		puts "Hola soy #{name}"
-	end
-end
-
-class Student < Person
-def presentation
-		puts "Hola soy #{name}"
-	end
-end
-
-
-
-alfon = Person.new('Alfon', 30)
-isa = Student.new('Isa', 23)
-
-puts alfon.name
-puts alfon.age
-
-puts isa.age
-puts isa.name
-
-alfon.presentation	
-isa.presentation
-
-
-
-
-
-
-
-
-=begin
-
-def date
-	time = Time.now
-	@price = price
-	if time.saturday? || time.sunday? 
-		price = price * 0.90
-	else
-		price = price
-
-	end
-
-end
-
- 
- def price
- 	price = 150
- 	if price > 100
- 		price = price * 0.95
- 	else
- 		price = price
  	end
  end
 
