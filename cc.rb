@@ -1,16 +1,4 @@
-=begin
-def solve_cypher(input)
-spl_input = input.split("")
-arr = spl_input.each do |letter|
-   letter.(ord-1)
-	end
-	
-end
 
-solve_cypher("ifmmp")
-
-
-=end
 a = 'Buenas tardes'
 
 
@@ -33,15 +21,3 @@ end
   cypher("p| uhdo qdph lv grqdog gxfn", -3)
 
 
-puts "===================="
-
-
-def c_cypher(frase)
-	arr_frase = frase.split("")
-	arr_frase.map do |letra|
-		print (letra.ord-1).chr
-	end
-	
-end
-
-c_cypher('ifmmp')
